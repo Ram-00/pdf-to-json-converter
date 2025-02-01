@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF to JSON Converter</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles321.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="converter-card">
+            <h1>PDF to JSON Converter</h1>
+            <p>Upload your PDF file to convert it to JSON format.</p>
+            <input type="file" id="pdfFile" accept=".pdf" class="file-input" aria-label="Select a PDF file">
+            <label for="pdfFile" class="custom-file-upload">Choose File</label>
+            <span id="file-chosen">No file chosen</span> <br> <br>
+            <button id="convertButton" class="convert-button">Convert</button>
+            <div id="result" class="result-area">
+                <div id="progress-container">
+                    <progress id="progress-bar" value="0" max="100"></progress>
+                </div>
+                <div id="spinner" class="spinner">
+                    <span></span><span></span><span></span>
+                    <span></span><span></span><span></span>
+                    <span></span><span></span>
+                </div>
+                <div id="result-message"></div>
+            </div>
+        </div>
+    </div>
+    <div class="successContainer"></div>
+    <script src="{{ url_for('static', filename='scripts321.js') }}"></script>
+</body>
+</html>
