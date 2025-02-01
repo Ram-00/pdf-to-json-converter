@@ -17,7 +17,7 @@ This project provides a web-based tool to convert PDF files into JSON format.  I
 
 ## Installation (for development)
 
-1.  Clone the repository: `git clone https://github.com/yourusername/pdf-to-json-converter.git`
+1.  Clone the repository: `git clone https://github.com/Ram-00/pdf-to-json-converter.git`
 2.  Create a virtual environment: `python3 -m venv venv` (or `python -m venv venv` depending on your setup)
 3.  Activate the virtual environment: `source venv/bin/activate` (Linux/macOS) or `venv\Scripts\activate` (Windows)
 4.  Install dependencies: `pip install -r requirements.txt` (create `requirements.txt` with `pip freeze > requirements.txt`)
